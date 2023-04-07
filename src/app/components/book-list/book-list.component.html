@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="rwo d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+    <h2 class="h2"> All Book-List</h2>
+  </div>
+<div class="table-responsive">
+  <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Description</th>
+          <th class="text-center" scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of Books;let i= index">
+          <th scope="row">{{book._id}}</th>
+          <td>{{book.name}}</td>
+          <td>{{book.price}}</td>
+          <td>{{book.description}}</td>
+          <td class="text-center">
+            <button class="btn btn-sm btn-primary"routerLink="/edit-book/{{book._id}}">Edit</button>
+            <!-- <button class="btn btn-sm btn-danger"(click)="delete(book._id,i)">delete</button> -->
+        </tr>
+      </tbody>
+    </table>
+
+<!-- Jumbotron -->
+<div class="card-deck" >
+  <div class="card" style="top:2cm">
+    <img src="https://static.tvtropes.org/pmwiki/pub/images/f321f0be_1937_4f71_87c3_d436edfe37af.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Harry Potter</h5>
+      <p class="card-text">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard,.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 min ago</small></p>
+      <a class="btn btn-primary" href="#" role="button">Add Book</a>
+    </div>
+  </div>
+  <div class="card"style="top:2cm">
+    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71aFt4+OTOL.jpg"class="card-img-top"  alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Alchemist</h5>
+      <p class="card-text">Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and inspiring wisdom</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a class="btn btn-primary" href="#" role="button">Add Book</a>
+    </div>
+  </div>
+  <div class="card"style="top:2cm">
+    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/711TxX8cdlL.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Romeo and Juliet</h5>
+      <p class="card-text">Romeo and Juliet is a tragedy written by William Shakespeare early in his career about the romance between two Italian youths from feuding families..</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a class="btn btn-primary" href="#" role="button">Add Book</a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
